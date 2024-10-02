@@ -587,8 +587,7 @@ img {
   color: #434455;
 }
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 158px;
+  padding: 96px 0 158px 0;
 }
 .portfolio {
   margin-bottom: 72px;
