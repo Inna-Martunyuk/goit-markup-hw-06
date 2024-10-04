@@ -181,6 +181,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 999;
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -241,6 +242,13 @@ img {
 .nav-link-mobile:hover,
 .nav-link-mobile:focus {
   color: #404bbf;
+}
+.contacts-mobile-tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
 }
 .contacts-link-mobile {
   font-weight: 500;
@@ -508,10 +516,10 @@ img {
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 .team-title {
@@ -535,6 +543,7 @@ img {
 }
 .team-list {
   display: flex;
+  align-items: center;
   flex-direction: column;
   row-gap: 72px;
 }
@@ -575,6 +584,7 @@ img {
 
   .team-list {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
   }
@@ -615,6 +625,12 @@ img {
   padding: 96px 0 158px 0;
 }
 .portfolio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
   margin-bottom: 72px;
   text-align: center;
 }
@@ -721,6 +737,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 .icon-footer-list {
@@ -834,6 +851,7 @@ img {
   .container-footer {
     padding-right: 108px;
     padding-left: 108px;
+    justify-content: flex-start;
   }
   .footer-social {
     text-align: start;
