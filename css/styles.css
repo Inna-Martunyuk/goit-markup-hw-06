@@ -229,18 +229,28 @@ img {
   gap: 24px;
   font-style: normal;
 }
+.nav-link-mobile-one {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #404bbf;
+  gap: 24px;
+  font-style: normal;
+}
 .nav-link-mobile:hover,
 .nav-link-mobile:focus {
   color: #404bbf;
 }
 .contacts-link-mobile {
-}
-.contacts-item-mobile {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
+  font-style: normal;
+}
+.contacts-item-mobile {
 }
 .contacts-item-mobile:hover,
 .contacts-item-mobile:focus {
@@ -346,6 +356,7 @@ img {
 @media screen and (min-width: 768px) {
   .main-one {
     max-width: 768px;
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -377,6 +388,8 @@ img {
       url(../images/fon-comp.jpg);
     max-width: 1440px;
     padding: 188px 0;
+  }
+  .main-title {
     margin: 0 auto 48px auto;
   }
 }
@@ -426,6 +439,7 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .features-text {
   font-weight: 400;
   font-size: 16px;
@@ -470,22 +484,35 @@ img {
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
   }
+  .features-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
 }
 /*==================FEATURES===================*/
 /*==================OUR TEAM===================*/
 .our-team {
   background-color: #f4f4fd;
-  padding: 96px 28px 32px;
+  padding: 96px 0;
 }
 .our-team-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  max-width: 264px;
 }
 .our-team-title {
-  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   text-align: center;
+  color: #fff;
+  margin-bottom: 72px;
 }
 .team-title {
   font-weight: 500;
@@ -540,8 +567,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .our-team {
-    padding: 96px 108px 32px;
+    padding: 96px 0 32px;
   }
+  .our-team-container {
+    padding: 0 15px;
+  }
+
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -691,9 +722,7 @@ img {
   flex-wrap: wrap;
   gap: 72px;
 }
-.icon-footer {
-  margin: auto;
-}
+
 .icon-footer-list {
   display: flex;
   gap: 16px;
@@ -829,8 +858,12 @@ img {
 @media screen and (min-width: 1158px) {
   .container-footer {
     align-items: baseline;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 0;
+  }
+  .form-div-footer {
+    margin-left: auto;
   }
   .logo-text {
     margin-right: 120px;
@@ -1019,7 +1052,7 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: inherit;
+  flex-shrink: 0;
   margin-right: 8px;
   width: 16px;
   height: 16px;
